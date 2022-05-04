@@ -1,0 +1,244 @@
+*,
+*::before,
+*::after{
+    /* border: 1px solid; */
+    box-sizing: border-box;
+}
+
+
+:root {
+    --bg-primary:#eee;
+    --bg-white: #fff;
+    --bg-dark: rgb(40, 152, 78);
+    
+    --fc-primary: #333;
+    --fc-special: rgb(78, 177, 65);
+    --fc-warn: rgb(218, 65, 65);
+
+    --fs-700: clamp(2.15rem, 5vh + 1rem, 3rem );
+    --fs-600: clamp(1.65rem, 5vh + 1rem, 2.15rem );
+    --fs-500: clamp(1.25rem, 5vh + 1rem, 1.65rem );
+    --fs-400: clamp(1rem, 5vh + 1rem, 1.25rem );
+
+   --fm-100: Arial, Helvetica, sans-serif;
+   --fm-200: 'Times New Roman', Times, serif;			
+}
+
+
+body {
+    background-color: #fff;
+    font-weight: 500;
+    color: var(--fc-primary);
+    font-family: var(--fm-100);
+    margin: 0;
+    padding: 0;
+}
+
+/* Typography ***/
+
+.text-center {
+    text-align: center;
+}
+
+h1 {
+    font-size: var(--fs-700);
+    text-transform: uppercase;
+    width: 100%;
+}
+
+h1 span{
+    color: var(--fc-special);    
+}
+
+
+h2{
+    font-size: var(--fs-400);
+    /* border-bottom: 2px solid #fff;
+    border-top: 2px solid #fff; */
+}
+
+b {
+    color: var(--fc-warn);
+}
+
+
+/**** Position container ****/
+.container {
+    width: min(100%, 800px);
+    margin: 5px auto;
+    background-color: var(--bg-primary);
+
+}
+
+header {
+    padding: 0.5em;
+}
+
+.login{
+    text-align: right;
+    padding-right: 1%;
+    height: 30px;
+    line-height: 30px;
+}
+
+/** spending section and bars ****/
+.spendings {
+    padding: 0.5em;
+}
+
+.spendings > *{
+    display: grid;
+    grid-template-columns: 6fr 11fr;
+    gap: 10px;
+    margin-bottom: 5px;
+ 
+}
+
+.categories{
+    text-align: right;
+}
+
+.categories span{
+    font-weight: bold;
+    color: var(--bg-dark)
+}
+
+.bar {
+    background-color: var(--bg-dark);
+}
+
+/* % bar display **/
+#housing {
+    --housing: 0;
+    width: var(--housing);
+}
+
+#dining {
+    --dining: 0;
+    width: var(--dining);
+}
+
+#entertainment {
+    --entertainment: 0;
+    width: var(--entertainment);
+}
+
+#transportation {
+    --transportation: 0;
+    width: var(--transportation);
+}
+
+#workexpense {
+    --workexpense: 0;
+    width: var(--workexpense);
+}
+
+#utility {
+    --utility: 0;
+    width: var(--utility);
+}
+
+#clothes {
+    --clothes: 0;
+    width: var(--clothes);
+}
+
+#luxury {
+    --luxury: 0;
+    width: var(--luxury);
+}
+
+#travel {
+    --travel: 0;
+    width: var(--travel);
+}
+
+#others {
+    --others: 0;
+    width: var(--others);
+}
+
+
+/**** add spending section ***/
+.addNewSpending {
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    padding: 0;
+}
+
+#totalexpense {
+    display: inline;
+    color: var(--fc-warn);
+    margin-left: 10px;
+}
+
+/*** Conclusion warning msg***/
+
+.conclusion {
+    padding: 0.5em;
+    height: 300px;
+    color: var(--fc-warn);
+}
+
+.conclusion li{
+    margin: 5px;
+}
+
+
+#warning1{
+    display: none;
+}
+
+#warning2{
+    display: none;
+}
+
+#warning3{
+    display: none;
+}
+
+#warning4{
+    display: none;
+}
+
+#warning5{
+    display: none;
+}
+
+#warning6{
+    display: none;
+}
+
+#warning7{
+    display: none;
+}
+
+#warning8{
+    display: none;
+}
+
+#warning9{
+    display: none;
+}
+
+#warning10{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+/*** footer ***/
+footer {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    font-size: 0.75rem;
+}

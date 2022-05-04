@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Track your Spending</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="container">
+        <h1 class="text-center">Track your spendings to <span>save money</span></h1>
+        <h2 class="text-center"><b>Note: </b>This is a demo with low security, please don't share personal information</h2>
+    </header>
+
+    <section class="login container">
+        <div>
+            <label for="userName">User Name:</label>
+            <input type="text" name="userName" id="userName">
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password">
+            <button type="submit" id="loginBtn">Sign Up / Log In</button>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="spendings">
+    
+            <div>
+                <div class="categories">Housing(<span></span>): </div>
+                <div class="bar" id="housing"></div>
+            </div>
+            <div>
+                <div class="categories">Dining(<span></span>):</div>
+                <div class="bar" id="dining"></div>
+            </div>
+            <div>
+                <div class="categories">Entertainment(<span></span>):</div>
+                <div class="bar" id="entertainment"></div>
+            </div>
+            <div>
+                <div class="categories">Transportation(<span></span>):</div>
+                <div class="bar" id="transportation"></div>
+            </div>
+            <div>
+                <div class="categories">Work Expense(<span></span>):</div>
+                <div class="bar" id="workexpense"></div>
+            </div>
+            <div>
+                <div class="categories">Utility(<span></span>):</div>
+                <div class="bar" id="utility"></div>
+            </div>
+            <div>
+                <div class="categories">Clothes(<span></span>):</div>
+                <div class="bar" id="clothes"></div>
+            </div>
+            <div>
+                <div class="categories">Luxury(<span></span>):</div>
+                <div class="bar" id="luxury"></div>
+            </div>
+            <div>
+                <div class="categories">Travel(<span></span>):</div>
+                <div class="bar" id="travel"></div>
+            </div>
+            <div>
+                <div class="categories">Others(<span></span>):</div>
+                <div class="bar" id="others"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="addNewSpending container">
+        <select name="spendingCategories" id="categories">
+            <option value="housing">Housing</option>
+            <option value="dining">Dining</option>
+            <option value="entertainment">Entertainment</option>
+            <option value="transportation">Transportation</option>
+            <option value="work-related-expense">Work-related Expense</option>
+            <option value="utility">Utility</option>
+            <option value="clothes">Clothes</option>
+            <option value="luxury">Luxury</option>
+            <option value="travel">Travel</option>
+            <option value="others">Others</option>
+        </select>
+        <input type="number" name="amount" id="amount">
+        <button type="submit" id="addBtn">Add</button>
+        <div id="totalexpense"></div>
+    </section>
+
+    <section class="diagram container">
+
+    </section>
+
+    <section class="conclusion container">
+        <ul id="conclusion-list">
+            <li id="warning1">Housing expense is too high</li>
+            <li id="warning2">Dining expense is too high</li>
+            <li id="warning3">Entertainment expense is too high</li>
+            <li id="warning4">Transportation expense is too high</li>
+            <li id="warning5">Work Expense expense is too high</li>
+            <li id="warning6">Clothes expense is too high</li>
+            <li id="warning7">Luxury expense is too high</li>
+            <li id="warning8">Travel expense is too high</li>
+            <li id="warning9">Others expense is too high</li>
+            <li id="warning10">Utility expense is too high</li>
+        </ul>
+
+    </section>
+
+    <footer class="container">
+        <p class="text-center">@This page was created by Jared Li</p>
+    </footer>
+
+    <script src="js/main.js" type="module"></script>
+</body>
+</html>
